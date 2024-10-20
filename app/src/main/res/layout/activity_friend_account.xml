@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Картинка аватара пользователя -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendavatarImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbuttonfriend"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textColor="@color/main_text"
+        android:background="@drawable/buttonshape"
+        android:text="назад"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:onClick="onClick"
+        android:fontFamily="@font/crooker"
+        android:textSize="18dp" />
+
+    <!-- Надпись имени пользователя -->
+    <TextView
+        android:id="@+id/friendusernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/friendavatarImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/crooker"
+        android:text="Penguin"
+        android:textSize="25sp"
+        android:textColor="@color/main_text"/>
+
+    <!-- Кнопка выхода из аккаунта -->
+
+
+
+    <TextView
+        android:id="@+id/friendalbom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/crooker"
+        android:layout_below="@id/friendusernameText"
+        android:text="Альбом"
+        android:textSize="25sp"
+        android:textColor="@color/main_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendphotosRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/friendalbom"
+        android:layout_marginTop="30dp"
+        android:padding="4dp"
+        android:background="@color/background"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

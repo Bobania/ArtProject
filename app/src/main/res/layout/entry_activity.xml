@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Entry">
+
+
+    <TextView
+        android:id="@+id/textvhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="110dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Авторизация"
+        android:textColor="@color/main_text"
+        android:textSize="28dp"
+        android:fontFamily="@font/crooker"
+     />
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/edittext"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="318dp"
+        android:autofillHints="password"
+        android:hint="Введите пароль"
+        android:fontFamily="@font/brusnika"
+        android:textSize="35dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/email"
+        android:background="@drawable/edittext"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="238dp"
+        android:autofillHints="password"
+        android:fontFamily="@font/brusnika"
+        android:textSize="35dp"
+        android:hint="Введите почту"
+        android:inputType="text" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/vhodbutton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/crooker"
+        android:text="Войти"
+        android:textColor="@color/main_text"
+        android:textSize="24sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newregbutton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/crooker"
+        android:text="Создать аккаунт"
+        android:textColor="@color/main_text"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo_black" />
+
+
+</RelativeLayout>

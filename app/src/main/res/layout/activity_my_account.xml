@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Картинка аватара пользователя -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Надпись имени пользователя -->
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatarImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/crooker"
+        android:text="Имя пользователя"
+        android:textSize="25sp"
+        android:textColor="@color/main_text"/>
+
+    <!-- Кнопка выхода из аккаунта -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_exit" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/usernameText"
+        android:layout_toLeftOf="@id/usernameText"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_download" />
+    <TextView
+        android:id="@+id/albom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/crooker"
+        android:layout_below="@id/usernameText"
+        android:text="Альбом"
+        android:textSize="25sp"
+        android:textColor="@color/main_text"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/albom"
+        android:layout_alignBaseline="@id/albom"
+        android:background="@drawable/buttonshape"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/main_text"
+        android:textSize="18sp"
+        android:text="Создать пост" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photosRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/albom"
+        android:layout_marginTop="30dp"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

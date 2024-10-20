@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/rounded_corner"
+
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/post_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя пользователя"
+
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/brusnika"
+        android:textSize="34sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название поста"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/crooker"
+        android:textSize="30sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/post_image"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/post_description"
+        android:textColor="@color/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Описание поста"
+        android:fontFamily="@font/brusnika"
+        android:textSize="36sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/main_text"
+            android:text="10 минут назад"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/likeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like"/>
+    </LinearLayout>
+</LinearLayout>

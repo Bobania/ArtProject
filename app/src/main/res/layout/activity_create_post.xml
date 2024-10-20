@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/crooker"
+        android:hint="Название поста"
+        android:textColor="@color/main_text"
+        android:textColorHint="@color/main_text"
+        android:textSize="26sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/brusnika"
+        android:textColorHint="@color/main_text"
+        android:hint="Описание"
+        android:textSize="40sp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/creationTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/brusnika"
+        android:textColor="@color/main_text"
+        android:textColorHint="@color/main_text"
+        android:textSize="35sp"
+        android:layout_below="@id/descriptionEditText"
+        android:layout_marginTop="10dp"
+        android:text="Время создания"/>
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/creationTimeTextView"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:textColor="@color/main_text"
+        android:fontFamily="@font/crooker"
+        android:textSize="23sp"
+        android:textColorHint="@color/main_text"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedImageView"
+        android:layout_marginTop="10dp"
+        android:text="Выбрать изображение"/>
+
+    <Button
+        android:id="@+id/createPostButton"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/crooker"
+        android:textSize="23sp"
+        android:textColor="@color/main_text"
+        android:textColorHint="@color/main_text"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectImageButton"
+        android:layout_marginTop="10dp"
+        android:text="Создать пост"/>
+
+</RelativeLayout>
